@@ -33,6 +33,12 @@ body {
   width: auto;
 }
 
+/* JUMBOTRON */
+
+.jumbotron {
+  padding-top: 100px;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
