@@ -118,6 +118,9 @@ body {
   height: 500px;
   padding: 5px;
   border: 1px solid green;
+  
+  display: flex;
+  align-items: center;
 }
 
 .gallery-item img {
