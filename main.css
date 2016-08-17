@@ -7,8 +7,9 @@ body {
   color: #5a5a5a;
 }
 
-.btn-default {
+.btn-otl {
   color: #eeeeee;
+  border-color: #eeeeee;
   background-image: linear-gradient(to bottom, #96ab1e 0, #a2ab6c 100%);
 }
 
