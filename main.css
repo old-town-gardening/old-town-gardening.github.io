@@ -7,6 +7,11 @@ body {
   color: #5a5a5a;
 }
 
+.btn-default {
+  color: #eeeeee;
+  background-image: linear-gradient(to bottom, #96ab1e 0, #a2ab6c 100%);
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
