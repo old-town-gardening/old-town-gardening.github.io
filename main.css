@@ -78,6 +78,38 @@ body {
 }
 
 
+/* Gallery CSS
+-------------------------------------------------- */
+
+.gallery-item {
+  height: 500px;
+  padding: 5px;
+  border: 1px solid green;
+  
+  display: flex;
+  align-items: center;
+}
+
+.gallery-item img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*
+-------------------------------------------------- */
+
+.bubble-panel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bubble-panel {
+  background-color: #eee;
+  border-radius: 20px;
+  padding: 20px;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -111,25 +143,8 @@ body {
   }
 }
 
-.center-block {
-  margin-left: auto:
-  margin-right: auto;
-  display: center;
-}
-
-/* Gallery CSS
--------------------------------------------------- */
-
-.gallery-item {
-  height: 500px;
-  padding: 5px;
-  border: 1px solid green;
-  
-  display: flex;
-  align-items: center;
-}
-
-.gallery-item img {
-  max-height: 100%;
-  max-width: 100%;
+@media (max-width: 768px) {
+  .bubble-panel-container {
+    grid-template-columns: 1fr;
+  }
 }
