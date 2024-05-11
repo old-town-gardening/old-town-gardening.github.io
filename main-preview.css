@@ -18,30 +18,8 @@ h1 {
   background-image: linear-gradient(to bottom, #96ab1e 0, #a2ab6c 100%);
 }
 
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
+.jumbotron {
+  background-color: #9fab5952;
 }
 
 
@@ -130,9 +108,13 @@ h1 {
 }
 
 .bubble-panel {
-  background-color: #eee;
+  background-color: #9fab5952;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
+}
+
+.bubble-panel h2 {
+  margin-top: 0;
 }
 
 /* RESPONSIVE CSS
