@@ -97,6 +97,12 @@ h1 {
   margin-bottom: 50px;
 }
 
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .gallery-item {
   width: 100%;
   display: flex;
