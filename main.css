@@ -7,42 +7,19 @@ body {
   color: #5a5a5a;
 }
 
+h1 {
+  font-size: 60px;
+  margin: 30px 0;
+}
+
 .btn-otl {
   color: #eeeeee;
   border-color: #eeeeee;
   background-image: linear-gradient(to bottom, #96ab1e 0, #a2ab6c 100%);
 }
 
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 20;
-}
-
-/* Flip around the padding for proper display in narrow viewports */
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: auto;
-}
-
-/* JUMBOTRON */
-
 .jumbotron {
-  padding-top: 100px;
+  background-color: #9fab5952;
 }
 
 
@@ -65,65 +42,106 @@ body {
 
 /* Featurettes
 ------------------------- */
+.featurette {
+  display: flex;
+  gap: 20px;
+}
 
 .featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  margin: 50px 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+.featurette-text {
+  width: 33%;
+}
+
+.featurette-images {
+  width: 66%;
+}
+
+.featurette-image {
+  width: 100%;
 }
 
 
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 20px;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
-    border-radius: 4px;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 120px;
-  }
-}
 
 /* Gallery CSS
 -------------------------------------------------- */
 
-.gallery-item {
-  height: 500px;
-  padding: 5px;
-  border: 1px solid green;
-  
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.gallery-column {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .gallery-item img {
-  max-height: 100%;
-  max-width: 100%;
+  width: 100%;
+  order: 1;
+}
+
+.gallery-caption {
+  font-weight: bold;
+  font-size: 18px;
+  order: 0;
+}
+
+/*
+-------------------------------------------------- */
+
+.bubble-panel-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bubble-panel {
+  background-color: #9fab5952;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.bubble-panel h2 {
+  margin-top: 0;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .bubble-panel-container {
+    grid-template-columns: 1fr;
+  }
+
+  .featurette {
+    flex-direction: column;
+  }
+
+  .featurette-divider {
+    margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  }
+
+  .featurette-text {
+    width: 100%;
+  }
+
+  .featurette-images {
+    width: 100%;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
 }
